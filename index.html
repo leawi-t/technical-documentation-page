@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head> <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Java technical documentation page</title> 
+    <link href="styles.css" rel="stylesheet"/> 
+  </head> 
+  <body> 
+    <header class="header"> 
+      <figure>
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"> 
+        <h1 class="title">Java Tutorial</h1> 
+      </figure>
+    </header> 
+    <nav class="mobile-nav">
+  <a href="#Introduction">Introduction</a>
+  <a href="#OOP">OOP</a>
+  <a href="#Reference">Reference</a>
+</nav>
+
+    <main id="main-doc"> 
+
+      <nav class="nav" id="navbar"> 
+  <header class="nav-title">Table of Content</header>
+
+  <h3><a class="nav-link" href="#Introduction">Introduction</a></h3> 
+  <ul>
+    <li><a class="nav-link" href="#What_is_Java?">What is Java?</a></li>
+    <li>
+      <a class="nav-link" href="#Java_Basics">Java Basics</a>
+      <ul>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#if-else_statement">if-else statement</a></li>
+        <li><a class="nav-link" href="#loops">loops</a></li>
+      </ul>
+    </li> 
+  </ul>
+
+  <h3><a class="nav-link" href="#OOP">OOP</a></h3> 
+  <ul> 
+    <li><a class="nav-link" href="#What_is_OOP">What is OOP</a></li>
+    <li><a class="nav-link" href="#OOP_Principles">OOP Principles</a></li> 
+  </ul>
+
+  <h3><a class="nav-link" href="#Reference">Reference</a></h3> 
+</nav>
+
+      <section class="content">
+        <!-- Introduction -->
+<section class="main-section" id="Introduction">
+  <header class="big-title">Introduction</header>
+  <section class="main-section" id="What_is_Java?"> 
+    <header class="medium-title">What is Java?</header>
+    <p>Java is a popular, object-oriented programming language and a software platform known for its portability across different devices through the "write once, run anywhere" principle.</p>
+    <p>It powers billions of devices, including Android operating systems and applications, enterprise software, and dynamic web applications, making it a versatile choice for various development needs.</p>
+    <p>Java contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core Java can be extended for a variety of purposes by supplementing it with additional objects.</p>
+    <div class="list">
+      <label for="popular">Why Java?</label>
+      <ul id="popular">
+        <li>Easy to learn</li>
+        <li>Platform independent</li>
+        <li>Robust and secure</li>
+        <li>Versatile</li>
+        <li>Scalable</li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+<!-- Java Basics -->
+<section class="main-section" id="Java_Basics">
+  <header class="medium-title">Java Basics</header>
+  <p>This section will cover the necessary basics of the language</p>
+</section>
+
+<!-- Hello World -->
+<section class="main-section" id="Hello_World">
+  <header class="small-title">Hello World</header>
+  <p>To get started with writing Java, open your prefered ide and write your first "Hello world" Java code:</p>
+  <code>
+    public static void main{ 
+      <span class="indent">System.out.println("hello world");</span>
+    }
+  </code>   
+</section>
+
+<!-- Variables -->
+<section class="main-section" id="Variables">
+  <header class="small-title">Variables</header>
+  <p>A variable is a symbolic name that represents a storage location in the computer's memory, used to hold a value or data that can change during the program's execution.</p> 
+  <p>Variables are fundamental for performing calculations, making decisions, and making programs dynamic by allowing data to be stored and manipulated as needed.</p>
+</section>
+
+<!-- Data Types -->
+<section class="main-section" id="Data_Types">
+  <header class="small-title">Data Types</header>
+  <p>Data types in programming classify the kind of values a variable can hold and define the operations that can be performed on those values. Understanding data types is fundamental for writing correct and efficient code.</p>
+  <div class="list">
+    <label for="variable-types"><a class="geek-link" href="https://www.geeksforgeeks.org/c/data-types-in-c/">Types of variables</a></label>
+    <ul>
+      <li>Primitive
+        <ul>
+          <li>int</li>
+          <li>char</li>
+          <li>float</li>
+          <li>double</li>
+          <li>boolean</li>
+        </ul>
+      </li>
+      <li>Reference
+        <ul>
+          <li>String</li>
+          <li>Object</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <code>
+    public static void main{ 
+      <span class="indent">int a=5; // sets the value of integer a to 5</span>
+      <span class="indent">char x='!';  // sets the value of character x to !</span>
+      <span class="indent">String word = "hello world";  // sets the value of the string</span>
+    }
+  </code>
+</section>
+
+<!-- if-else statement -->
+<section class="main-section" id="if-else_statement">
+  <header class="small-title">if-else statement</header> 
+  <p>An if-else statement is a programming construct that executes different blocks of code based on whether a condition is true or false.</p>
+  <p><strong>Condition Evaluation:</strong> The program first evaluates a condition provided within the if statement.</p>
+  <p><strong>True Condition:</strong> If true, the code block associated with the if is executed.</p>
+  <p><strong>False Condition:</strong> If false, the else block (if present) is executed instead.</p>
+  
+  <code>
+    // code to check whether number is even or odd
+    <span>public static void main{</span> 
+    <span class="double-indent">int x=5;</span>  
+    <span class="double-indent">if(x%2==0) System.out.println("the number is even");</span>  
+    <span class="double-indent">else if(x%2!=0) System.out.println("the number is odd");</span> 
+    <span class="double-indent">else System.out.println("It is neither");</span>
+    <span>}</span>
+  </code> 
+
+  <p>You may also chain multiple conditions using else if:</p>
+  <code>
+    <span>if (condition_1) { statement_1; }</span>
+    <span>else if (condition_2) { statement_2; }</span>
+    <span>else { statement_last; }</span>
+  </code>
+</section>
+
+<!-- Loops -->
+<section class="main-section" id="loops">
+  <header class="small-title">Loops</header>
+  <p>In Java, loops are control flow statements used to repeatedly execute a block of code based on a condition. Java offers three primary types: for, while, do-while, plus the enhanced for loop.</p> 
+  <code>
+    // code to print numbers from 1-10 
+    <span>for(int i=1; i<=10; i++){</span>  
+    <span class="double-indent">System.out.println(i);</span> 
+    <span>}</span>
+  </code> 
+</section>
+
+<!-- Object Oriented Programming -->
+<section class="main-section" id="OOP">
+  <header class="big-title">OOP</header>
+</section>
+<section class="main-section" id="What_is_OOP">
+  <header class="medium-title">What is OOP</header>
+  <p>Object-Oriented Programming (OOP) is a programming paradigm that structures software around objects, which are instances of classes containing both data (attributes) and functions (methods) that operate on that data.</p>
+  <p>This approach models real-world entities, making code more organized, reusable, and maintainable.</p> 
+</section>
+<section class="main-section" id="OOP_Principles">
+  <header class="medium-title">OOP Principles</header>
+  <p> Key principles of OOP include abstraction, encapsulation, inheritance, and polymorphism, which together allow for the creation of flexible, modular, and scalable software systems. </p>
+
+<p>Core Components</p>
+<p class="small-title">Objects</p>
+<p class="indent">The fundamental building blocks of an OOP system, representing real-world entities or abstract concepts. They have specific data (attributes) and behaviors (methods).</p>
+<p class="small-title">Classes</p>
+<p class="indent">Blueprints or templates for creating objects. They define the structure and behavior that all objects of that class will have.</p> 
+<p class="small-title">Attributes (Properties)</p>
+<p class="indent">Variables that store the data or characteristics of an object.</p> 
+<p class="small-title">Methods (Functions)</p>
+<p class="indent">Functions defined within a class that perform actions or operations on an object's data.</p> 
+  <table>
+    <caption>Pillars Of OOP</caption>
+    <tbody>
+      <tr>
+        <th>Abstraction</th>
+        <td>Hiding complex implementation details and showing only the essential features of an object. This simplifies the use of objects by providing a clean and understandable interface. </td>
+      </tr>
+      <tr>
+        <th>Encapsulation</th>
+        <td>Bundling data and methods that operate on the data into a single unit, called an object. This hides the internal details of an object, protecting its data from unauthorized access. </td>
+      </tr>
+      <tr>
+        <th>Inheritance</th>
+        <td>A mechanism that allows a new class (child class) to inherit properties and behaviors from an existing class (parent class). This promotes code reuse and creates hierarchical relationships between classes. </td>
+      </tr>
+      <tr>
+        <th>Polymorphism</th>
+        <td>The ability of objects to take on many forms. Different objects can respond to the same method call in their own way, leading to more flexible and adaptable code. </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="main-section" id="Reference">
+  <header class="big-title">Reference</header>
+  <p>All of the text has been taken from <a class="reference" href="https://developer.mozilla.org/en-US/">MDN</a></p>
+</section>
+    </main> 
+  </body> 
+</html>
