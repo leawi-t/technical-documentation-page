@@ -29,6 +29,16 @@ This page is a simple technical documentation example built with HTML and CSS.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+technical-documentation-page/
+├── index.html
+├── styles.css
+├── README.md
+└── screenshot.png
+
+## How to Use
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/technical-documentation-page.git
 
 
